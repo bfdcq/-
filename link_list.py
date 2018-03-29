@@ -13,8 +13,9 @@ def create_llist(l):
         new_node = ListNode(value)
         if not now_node:
             head = now_node = new_node
-        now_node.next = new_node
-        now_node = new_node
+        else:
+            now_node.next = new_node
+            now_node = new_node
     return head
 
 
